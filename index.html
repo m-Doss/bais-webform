@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <title>Student Lifestyle Survey</title>
 </head>
+
 <body>
     
-
-
-
     
+    
+    <form action="" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+        <h2>Student Lifestyle Form</h2>
+        <p></p>
+        <!--Name-->
+        <label>
+            First Name
+            <em>*</em>
+        </label>
+        <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" />
+        
+        <label>Last Name<em>*</em></label>
+        <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder="" />
+        
+        <!--Email-->
+        <label>
+            University Email
+            <em>*</em>
+        </label>
+        <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" />
+        <!--Phone-->
+        <label> Phone </label>
+        <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1"
+            isCountryCodeEnabled="false" maxlength="20" value="" fieldType="11"
+            id="international_PhoneNumber_countrycode" placeholder="" />
+        <label>Number</label>
+        <!--Dropdown-->
+        <label>
+            Gender
+            <em>*</em>
+        </label>
+        <select name="Dropdown">
+            <option selected="true" value="-Select-">-Select-</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-Binary">Non-Binary</option>
+            <option value="Decline&#x20;to&#x20;Answer">Decline to Answer</option>
+        </select>
+        <!--Number-->
+        <label>
+            Age
+            <em>*</em>
+        </label>
+        <input type="text" name="Number" value="" maxlength="18" placeholder="" />
+        <a href="webform2.html" class="next">Next &raquo;</a>
+    </form>
+
 </body>
+
 </html>
