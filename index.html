@@ -9,10 +9,14 @@
     <title>Student Lifestyle Survey</title>
 </head>
 
+
+<header>
+    <h1><a href="index.html" class="heading">Web Form</a></h1>
+    <p>Made by Malek</p>
+</header>
+
+
 <body>
-    
-    
-    
     <form action="" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
         <h2>Student Lifestyle Form</h2>
         <p></p>
@@ -21,17 +25,17 @@
             First Name
             <em>*</em>
         </label>
-        <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" />
+        <input type="text" required="required" maxlength="255" name="Name_First" fieldType="7" placeholder="" />
         
         <label>Last Name<em>*</em></label>
-        <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder="" />
+        <input type="text" required="required" maxlength="255" name="Name_Last" fieldType="7" placeholder="" />
         
         <!--Email-->
         <label>
             University Email
             <em>*</em>
         </label>
-        <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" />
+        <input type="text" required="required" maxlength="255" name="Email" value="" fieldType="9" placeholder="" />
         <!--Phone-->
         <label> Phone </label>
         <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1"
@@ -55,7 +59,7 @@
             Age
             <em>*</em>
         </label>
-        <input type="text" name="Number" value="" maxlength="18" placeholder="" />
+        <input type="text" required="required" name="Number" value="" maxlength="18" placeholder="" />
         <a href="webform2.html" class="next">Next &raquo;</a>
     </form>
 

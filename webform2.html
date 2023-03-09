@@ -9,33 +9,38 @@
     <title>Document</title>
 </head>
 
+<header>
+    <h1><a href="index.html" class="heading">Web Form</a></h1>
+    <p>Made by Malek</p>
+</header>
+
 <body>
-    <form action="" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+    <form action="webform3.html" name="form" id="form"  accept-charset="UTF-8" enctype="multipart/form-data">
 
         <h2>Student Lifestyle Form</h2>
         <p></p>
         
         <!--Radio-->
         <label>Do you participate in sports? </label>
-        <input type="radio" id="Radio_1" name="Radio" value="Yes" />
+        <input type="radio" required="required" id="Radio_1" name="Radio" value="Yes" />
         <label for="Radio_1">Yes</label>
-        <input type="radio" id="Radio_2" name="Radio" value="No" />
+        <input type="radio" required="required" id="Radio_2" name="Radio" value="No" />
         <label for="Radio_2">No</label>
         
         <!--Radio-->
         <label>Do you workout? </label>
-        <input type="radio" id="Radio1_1" name="Radio1" value="Yes" />
+        <input type="radio" required="required" id="Radio1_1" name="Radio1" value="Yes" />
         <label for="Radio1_1">Yes</label>
-        <input type="radio" id="Radio1_2" name="Radio1" value="No" />
+        <input type="radio" required="required" id="Radio1_2" name="Radio1" value="No" />
         <label for="Radio1_2">No</label>
         
         <!--Decimal-->
         <label> How many hours of sleep do you get on average? </label>
-        <input type="text" maxlength="50" name="Decimal" value="" placeholder="" />
+        <input type="text" required="required" maxlength="50" name="Decimal" value="" placeholder="" />
         
         <!--Number-->
         <label> How many credit hours are you enrolled in this semester? </label>
-        <input type="text" name="Number1" value="" maxlength="18" placeholder="" />
+        <input type="text" required="required" name="Number1" value="" maxlength="18" placeholder="" />
         
         <!--Dropdown-->
         <label> How times a week do you eat out </label>
@@ -51,7 +56,7 @@
             </option>
         </select>
         <a href="index.html" class="previous">&laquo; Previous</a>
-        <a href="webform3.html" class="next">Next &raquo;</a>
+        <button type="submit"><em>Submit</em></button>
     </form>
 
 
